@@ -45,7 +45,7 @@ class _HomeState extends State<Home> {
                           CircleAvatar(
                             radius: 20,
                             backgroundImage: NetworkImage(
-                                'https://scontent.fpnh10-1.fna.fbcdn.net/v/t1.0-9/101716832_2779781565463978_2961489908598931490_o.jpg?_nc_cat=102&_nc_sid=09cbfe&_nc_ohc=vPU1zpn4H1YAX-v4N_V&_nc_ht=scontent.fpnh10-1.fna&oh=783b0c87ded95f0171a84250dd1e07f8&oe=5F814277'),
+                                'https://staticg.sportskeeda.com/editor/2020/09/9f615-15992439400294-800.jpg'),
                           ),
                         ],
                       ),
