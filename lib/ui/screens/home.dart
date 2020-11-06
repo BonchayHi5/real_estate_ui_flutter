@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:real_esate_ui/ui/widget/search_bar.dart';
-import 'package:real_esate_ui/core/model/constants.dart';
-import 'package:real_esate_ui/core/model/house.dart';
-import 'detail.dart';
+import 'package:real_esate_ui/all_export.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -37,15 +34,21 @@ class _HomeState extends State<Home> {
                             size: 30,
                             color: Colors.white,
                           ),
-                          Text('Real Estate UI',
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 22.0)),
-                          CircleAvatar(
-                            radius: 20,
-                            backgroundImage: NetworkImage(
-                                'https://staticg.sportskeeda.com/editor/2020/09/9f615-15992439400294-800.jpg'),
+                          Text(
+                            'Real Estate UI',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 22.0),
+                          ),
+                          InkWell(
+                            onTap: () =>
+                                Navigator.pushNamed(context, ProfileScreenView),
+                            child: CircleAvatar(
+                              radius: 20,
+                              backgroundImage: NetworkImage(
+                                  'https://staticg.sportskeeda.com/editor/2020/09/9f615-15992439400294-800.jpg'),
+                            ),
                           ),
                         ],
                       ),

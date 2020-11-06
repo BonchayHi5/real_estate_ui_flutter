@@ -9,3 +9,10 @@ export 'ui/screens/profile.dart';
 
 //Constant
 export 'core/model/constants.dart';
+
+//Model
+export 'core/model/house.dart';
+
+//widget
+export 'ui/widget/header.dart';
+export 'ui/widget/search_bar.dart';

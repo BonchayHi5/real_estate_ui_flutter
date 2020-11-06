@@ -8,6 +8,11 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
         builder: (context) => Home(),
       );
       break;
+    case ProfileScreenView:
+      return MaterialPageRoute(
+        builder: (context) => Profile(),
+      );
+      break;
     default:
       return MaterialPageRoute(
         builder: (context) => Home(),
