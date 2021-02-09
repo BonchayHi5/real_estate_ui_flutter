@@ -16,3 +16,5 @@ export 'core/model/house.dart';
 //widget
 export 'ui/widget/header.dart';
 export 'ui/widget/search_bar.dart';
+export 'ui/widget/header.dart';
+export 'ui/widget/home_body.dart';
