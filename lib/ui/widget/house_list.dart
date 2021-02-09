@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:real_esate_ui/all_export.dart';
 
 class HouseList extends StatelessWidget {
@@ -45,8 +46,10 @@ class HouseList extends StatelessWidget {
                           ),
                           child: Hero(
                             tag: "${houseList[index].id}",
-                            child: Image.network(houseList[index].imgUrl,
-                                fit: BoxFit.cover),
+                            child: CachedNetworkImage(
+                              imageUrl: houseList[index].imgUrl,
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                       ),
