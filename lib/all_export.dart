@@ -10,6 +10,9 @@ export 'ui/screens/profile.dart';
 //Constant
 export 'core/model/constants.dart';
 
+
+export 'core/route/route_name.dart';
+
 //Model
 export 'core/model/house.dart';
 

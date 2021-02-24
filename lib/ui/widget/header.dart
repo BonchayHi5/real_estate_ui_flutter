@@ -1,5 +1,7 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:real_esate_ui/core/model/constants.dart';
+import 'package:real_esate_ui/core/route/route_name.dart';
 
 class Header extends StatelessWidget {
   @override
@@ -31,8 +33,7 @@ class Header extends StatelessWidget {
                   onTap: () => Navigator.pushNamed(context, ProfileScreenView),
                   child: CircleAvatar(
                     radius: 20,
-                    backgroundImage: NetworkImage(
-                        'https://staticg.sportskeeda.com/editor/2020/09/9f615-15992439400294-800.jpg'),
+                    backgroundImage: CachedNetworkImageProvider('https://staticg.sportskeeda.com/editor/2020/09/9f615-15992439400294-800.jpg'),
                   ),
                 ),
               ],

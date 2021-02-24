@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:real_esate_ui/core/model/constants.dart';
 import 'package:real_esate_ui/core/model/house.dart';
@@ -72,8 +73,8 @@ class Detail extends StatelessWidget {
                     background: Hero(
                       tag: "${loadedHouse.id}",
                       child: SizedBox(
-                        child: Image.network(
-                          loadedHouse.imgUrl,
+                        child: CachedNetworkImage(
+                          imageUrl: loadedHouse.imgUrl,
                           fit: BoxFit.fitHeight,
                         ),
                       ),

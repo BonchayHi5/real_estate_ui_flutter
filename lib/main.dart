@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:real_esate_ui/ui/screens/splashscreen.dart';
 import 'all_export.dart';
 import 'core/route/router.dart' as router;
 import 'package:google_fonts/google_fonts.dart';
@@ -12,7 +13,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
       theme: ThemeData(
         textTheme: GoogleFonts.robotoTextTheme(
           Theme.of(context).textTheme,
@@ -20,9 +20,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.deepPurple,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Home(),
+      home: SplashScreen(),
       onGenerateRoute: router.generateRoute,
-      initialRoute: HomeScreenView,
     );
   }
 }
